@@ -1,0 +1,135 @@
+*{margin:0;}
+
+header{
+    background-color: yellow;
+    height: 10vh;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header *{
+    display: inline-block;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 5px;
+    transition: 0.10s;
+}
+
+nav ul li:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav ul{
+    margin: 0;
+}
+
+.icon-button{
+    height: 40%;
+}
+
+.menu-usuario, .menu-usuario button{
+    height: 100%;
+}
+
+.menu-usuario button{
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    position: relative;
+}
+
+.menu-usuario button *{
+    background-color: transparent;
+    border: none;
+}
+
+.quantia-carrinho{
+    border-radius: 50%;
+    font-size: 12px;
+    height: 20px;
+    width: 20px;
+    color: white;
+    background-color: rgb(65, 5, 65) !important;
+    position: absolute;
+    right: 0;
+    bottom: 20%;
+}
+
+
+.logo{
+    height: 100%;
+}
+
+.fluxo{
+    margin-top: 30px;
+}
+
+.card{
+    border: none;
+    box-shadow: 10px 10px 20px rgb(138, 138, 138);
+    padding: 10px;
+}
+
+.add-carrinho{
+    background-color: transparent;
+    border: 3px solid rgb(9, 184, 9);
+    color: rgb(9, 184, 9);
+    padding: 5px;
+    transition: 0.25s;
+}
+
+.add-carrinho:hover{
+    background-color: rgb(9, 184, 9);
+    color:white;
+}
+
+.thumbnail{
+    text-align: center;
+}
+
+.product-icon{
+    height: 350px;
+    width: 350px;
+}
+
+.load-page{
+    height: 100vh;
+    width: 100vw;
+    background: rgb(241, 241, 241);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.load-card{
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px rgb(112, 112, 112);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@keyframes girar{
+      to {
+        transform: rotate(1turn);
+      }
+}
+
+.loader{
+    height: 50px;
+    width: 50px;
+    border-left: 2px dotted rgb(124, 124, 0);
+    border-radius: 50%;
+    animation: girar 1s infinite;
+}
